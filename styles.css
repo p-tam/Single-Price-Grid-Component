@@ -1,0 +1,115 @@
+body {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100Vh;
+}
+
+.card {
+    height: 450px;
+    width: 600px;
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    grid-template: minmax(100px, 46%) 1fr / 1fr 1fr;
+    grid-template-areas: 
+        "a a"
+        "b c";
+}
+
+.top-section {
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+.intro-text > h2 {
+    color: hsl(179, 62%, 43%);
+    font-family: Karla;
+}
+
+.intro-text > h3 {
+    color: hsl(71, 73%, 54%);
+    font-family: Karla;
+}
+
+.intro-text > p {
+    color: hsl(218, 22%, 67%);
+    font-family: Karla;
+    font-size: 0.9rem;
+    line-height: 1.5;
+} 
+
+.intro-text, .subscription-info {
+    padding: 25px 40px;
+}
+
+.bottom-left-section {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.subscription-info > h2 {
+    color: white;
+    font-family: Karla;
+    font-size: 17px;
+}
+
+.bottom-right-section {
+    background-color: hsl(179, 49%, 61%);
+}
+
+.price {
+    display: flex;
+    text-align: center;
+}
+
+.price > h3, p {
+    margin: 0;
+    color: white;
+    font-family: Karla;
+}
+
+.price > h3 {
+    font-size: 30px;
+}
+
+.price > p {
+    margin-left: 12px;
+    font-weight: 100;
+    color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+.subscription-info > h3 {
+    color: white;
+    font-family: Karla;
+    font-size: 14.8px;
+    font-weight: 100;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border: none;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: Karla;
+}
+
+.bottom-right-section {
+    color: white;
+    font-family: Karla;
+    padding: 25px 40px;
+}
+
+.bottom-right-section > h3 {
+    margin-bottom: 15px;
+}
+
+.bottom-right-section > p {
+    font-size: 15px;
+    font-weight: 100;
+}
